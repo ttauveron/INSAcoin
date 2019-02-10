@@ -28,7 +28,7 @@ RUN apt update && \
 	git \
 	qt5-default \
 	libssl1.0-dev && \
-	git clone -b ${INSACOIN_VERSION} https://github.com/Crypto-lyon/INSAcoin /opt/INSAcoin && \
+	git clone -b ${INSACOIN_VERSION} https://github.com/insacoin/INSAcoin /opt/INSAcoin && \
 	chmod +x /opt/INSAcoin/scripts/install_libdb4.8.sh && \
 	/opt/INSAcoin/scripts/install_libdb4.8.sh amd64 && \
 	./autogen.sh && \
